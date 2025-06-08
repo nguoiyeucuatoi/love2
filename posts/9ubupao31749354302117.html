@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>A3</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { display: block; }
+    #loadingText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-family: 'Roboto', sans-serif;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div id="loadingText">Đang tải yêu thương...</div>
+
+<script src="https://cdn.jsdelivr.net/gh/dulieublog2/js@main/chukhonggian.js"></script>
+
+<script>
+const jansharenoidung = ["Nguyễn Tiến Cúc","Thái Châu Băng","Đặng Anh Bảo","A3 NTC 2427","Phạm Bá Bảo","Đặng Hồ Đức Hải","Hoàng Hải","Ngô Việt Hoàng","Tô Huy Hoàng","Nguyễn Khánh Hương","Nguyễn Gia Huy","A3 NTC 2427","Hồ Xuân Khiết","Nguyễn Trần Ngọc Khoa","Lê Thanh Khuê","Nguyễn Thị Minh Khuê","Nguyễn Thị Hạ Kiên","Phạm Gia Liêm","Đào Kha Linh","Nguyễn Ngô Bảo Long","Trần Lê Thiện Long","Phan Thị Thanh Nga","Lê Trần Bảo Ngọc","Đặng Nhật Nguyên","Lê Phan Phú Nguyên","Nguyễn Hữu Khôi Nguyên","Phạm Quốc Nguyên","Nguyễn Trọng Phi","Lê Thị Sáng","Võ Trương Quốc Thắng","Lê Công Thành","Đinh Thị Anh Thảo","Hoàng Anh Thơ","Hồ Ngọc Anh Thư","Trần Minh Thư","Nguyễn Thị Thúy","Nguyễn Bá Tiên","Lưu Thị Phương Trang","Nguyễn Quỳnh Thanh Trúc","Trần Minh Trung","Trần Xuân Bảo Trung","Bùi Minh Tuấn","Nguyễn Ánh Hồng Vân","Nguyễn Nguyên Vinh","Trần Thị Thảo Vy","Y - Ye Niê","Nguyễn Hiền Phi Hùng","A3 NTC 2427",""];
+const imageUrls = [ 'https://raw.githubusercontent.com/guiyeuthuong/love/main/uploads/1749354293894_37e86bbd866a32346b7b.jpg' ];
+</script>
+
+<audio id="phatnhac" autoplay muted>
+  <source src="https://nguoiyeucuatoi.github.io/love/onlylove.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener('click', function () {
+    const audio = document.getElementById('phatnhac');
+    audio.muted = false;
+    audio.play();
+  }, { once: true }); 
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/nguoiyeucuatoi/love@main/chuchayjanshare2.js"></script>
+</body>
+</html>
